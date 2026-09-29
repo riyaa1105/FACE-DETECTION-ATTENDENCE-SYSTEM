@@ -20,8 +20,12 @@ def initialize_csv():
 def detect_eyes_and_blink(gray, face_x, face_y, face_w, face_h):
     """Simplified eye detection and blink check"""
     # Load both cascade classifiers
-    eye_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml')
-    eye_tree_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye_tree_eyeglasses.xml')
+
+    # eye_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml')
+    eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
+    
+    # eye_tree_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye_tree_eyeglasses.xml')
+    eye_tree_cascade = cv2.CascadeClassifier('haarcascade_eye_tree_eyeglasses.xml')
     
     # Define the eye region (upper half of face)
     roi_gray = gray[face_y:face_y + int(face_h/2), face_x:face_x + face_w]
