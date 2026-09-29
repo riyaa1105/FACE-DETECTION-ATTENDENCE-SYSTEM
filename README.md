@@ -78,7 +78,7 @@ A comprehensive **Face Recognition-based Attendance Management System** built wi
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/rajjadav007/FACE-DETECTION-ATTENDENCE-SYSTEM.git
+git clone https://github.com/riyaa1105/FACE-DETECTION-ATTENDENCE-SYSTEM.git
 cd FACE-DETECTION-ATTENDENCE-SYSTEM
 ```
 
